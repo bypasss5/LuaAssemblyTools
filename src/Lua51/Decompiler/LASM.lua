@@ -85,7 +85,7 @@ return function(file)
             for i = 1, chunk.Locals.Count do
                 write(".local '" .. chunk.Locals[i - 1].Name .. "'")
             end
-        end
+        e
         if chunk.Upvalues.Count > 0 then
             write("; Upvalues")
             for i = 1, chunk.Upvalues.Count do
